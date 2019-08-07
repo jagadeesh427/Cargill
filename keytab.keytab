@@ -1,0 +1,17 @@
+How to create a Keytab file?
+
+###use below commands to create keytab file####
+
+ktutil
+
+addent -password -p <principal Name> -k 1 -e RC4-HMAC
+
+- enter password for username -
+
+wkt username.keytab
+
+q
+
+####initialize the keytab file by running below command##
+
+kinit -kt username.keytab <PrincilpalName>
