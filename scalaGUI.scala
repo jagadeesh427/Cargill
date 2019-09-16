@@ -1,8 +1,8 @@
+package scala
 
 import scala.swing._
-
-object FirstSwingApp extends SimpleGUIApplication {
-  def top = new MainFrame {
+object FirstSwingApp extends SimpleSwingApplication{
+  def top: MainFrame = new MainFrame {
     title = "First Swing App"
     contents = new Button {
       text = "Click me"
@@ -10,10 +10,7 @@ object FirstSwingApp extends SimpleGUIApplication {
   }
 }
 
-
-sbt:
-
-name := "SCALA"
+nname := "SCALA"
 
 version := "0.1"
 
@@ -21,12 +18,9 @@ scalaVersion := "2.11.8"
 
 scalacOptions += "-deprecation"
 
-libraryDependencies += "org.scala-lang.modules" %% "scala-swing" % "2.11.8"
+libraryDependencies += "org.scala-lang.modules" %% "scala-swing" % "2.1.1"
 
-
-
-
-####
+#############################################################################################
 
 import scala.swing._
 
