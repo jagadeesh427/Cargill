@@ -1,0 +1,10 @@
+import java.io._
+
+object department {
+
+  def main(args: Array[String]) {
+  val writer = new PrintWriter(new File("/Users/j892650/Desktop/test.txt" ))
+    writer.write("Hello Scala")
+    writer.close()
+    }
+}
